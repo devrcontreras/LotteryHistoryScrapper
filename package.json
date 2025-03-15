@@ -16,6 +16,7 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "mssql": "^11.0.1"
+    "mssql": "^11.0.1",
+    "puppeteer": "^24.4.0"
   }
 }
