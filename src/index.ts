@@ -1,5 +1,6 @@
 import { error } from 'console';
 import * as lotoScrapperService from './services/lotoScrapperService.js';
+import { delay } from './utils/delay.js';
 
 async function main(){
 
@@ -17,10 +18,6 @@ async function main(){
 
         await delay(10000);
     }
-}
-
-function delay(ms: number) {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 main().catch(error);
