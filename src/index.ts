@@ -1,10 +1,10 @@
 import { error } from 'console';
-import * as lotoService from './services/lotoService.js';
+import * as lotteryService from './services/lotteryService.js';
 
 async function main(){
 
-    await lotoService.getLoto(2025);
-    
+    await lotteryService.getLoto(2018);
+    await lotteryService.getKino(2010);
 }
 
 main().catch(error);
