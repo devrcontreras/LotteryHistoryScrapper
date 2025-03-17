@@ -2,7 +2,7 @@ import mssql from 'mssql';
 
 const connectionSetting = {
     server: "localhost",
-    database: "loto",
+    database: "Lotteries",
     user: "sa",
     password: "Db123*1@7869",
     options: {
