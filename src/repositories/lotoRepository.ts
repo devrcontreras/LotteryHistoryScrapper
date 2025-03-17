@@ -15,7 +15,6 @@ export async function addLoto(loto: Loto){
             .input("SuperLotoMas", mssql.NVarChar, loto.superLotoMas)
             .query("INSERT INTO Loto(Date, Numbers, LotoMas, SuperLotoMas) Values(@Date, @Numbers, @LotoMas, @SuperLotoMas)");
 
-        console.log(result);
     }
     catch(error){
         console.error(error);
