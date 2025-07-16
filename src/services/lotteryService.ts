@@ -49,9 +49,18 @@ export async function getKino(year:number){
 
         try
         {
-
+            //const getStoredDraws = await kinoRepository.getNumberByYear(currentYear);
             const yearlyDrawResult = await kinoScrapperService.getKino(currentYear);
-            await Promise.all(yearlyDrawResult.map(kino => kinoRepository.addKino(kino)));
+            
+            await Promise.all(yearlyDrawResult.map(kino =>{
+
+                /*let exists = getStoredDraws.some(value => value.date === kino.date && value.numbers === kino.numbers);
+                
+                if(!exists){*/
+                 kinoRepository.addKino(kino);
+                //}
+
+            }));
 
         }
         catch(error){

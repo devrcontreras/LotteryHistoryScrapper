@@ -1,11 +1,11 @@
 class Kino{
-    date: string;
-    numbers: string;
-    
-    constructor(date: string, numbers: string){
-        this.date = date;
-        this.numbers = numbers;
-    }
+    constructor(
+        public date: string,
+        public numbers: string,
+        public nums: string[],
+        public day: number,
+        public month: number,
+        public year: number){}
 }
 
 export default Kino;
